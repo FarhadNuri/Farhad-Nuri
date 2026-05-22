@@ -1,0 +1,58 @@
+[
+{ icon: "⚛️", text: "React Expert", top: "-16px", right: "-16px", bg: "#6c63ff" },
+{ icon: "🚀", text: "6+ Years", bottom: "-16px", left: "-16px", bg: "#ff6584" },
+]
+
+ About Me
+
+ Passionate about building things
+
+I'm a Full Stack Developer based in Bangalore, India with 6+ years of experience designing and building scalable web applications. I specialize in React ecosystems and Node.js backends.
+
+When I'm not coding, I contribute to open source, write technical articles, and speak at developer conferences. I believe great software is a blend of engineering rigor and thoughtful design.
+
+
+[
+["📍", "Bangalore, India"],
+["🎓", "BITS Pilani, 2019"],
+["💼", "Open to Remote"],
+["📧", "alex@dev.io"],
+]
+
+↓ Download Resume
+
+
+// Projects section
+
+ {["💬", "📋", "🛒", "📊", "🔐", "📌"][i]}
+
+ ⬡
+
+ ↗
+
+ // Blog section
+
+←
+→   
+
+{["🏗️", "🔷", "⚡", "🎬", "🔄"][i]}
+
+⏱
+
+
+// Contact
+
+
+
+I'm always open to interesting conversations, collaborations, or new opportunities.
+Whether you have a project in mind or just want to say hi — my inbox is open!
+
+[
+["📧", "Email", "alex@dev.io"],
+["💼", "LinkedIn", "linkedin.com/in/alexchen"],
+["🐙", "GitHub", "github.com/alexchen"],
+["🐦", "Twitter", "@alex_codes"],
+]
+
+✅
+Send Message →
