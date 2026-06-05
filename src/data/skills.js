@@ -2,8 +2,9 @@ export const SKILLS = [
   {
     cat: "Frontend",
     items: [
-      { n: "React", l: 95 },
+      { n: "React.js", l: 95 },
       { n: "Next.js", l: 88 },
+      { n: "JavaScript", l: 80 },
       { n: "TypeScript", l: 90 },
       { n: "Tailwind", l: 92 },
     ],
@@ -12,31 +13,28 @@ export const SKILLS = [
     cat: "Backend",
     items: [
       { n: "Node.js", l: 90 },
-      { n: "Express", l: 88 },
+      { n: "Express.js", l: 88 },
       { n: "MongoDB", l: 85 },
-      { n: "MySQL", l: 82 },
-      { n: "Java", l: 80 },
+      { n: "Redis", l: 80 },
+      { n: "NeonDB", l: 80 },
     ],
   },
   {
     cat: "Testing",
     items: [
-      { n: "Selenium", l: 92 },
-      { n: "Playwright", l: 88 },
-      { n: "JUnit", l: 85 },
-      { n: "TestNG", l: 87 },
-      { n: "Rest Assured", l: 84 },
+      { n: "Jira", l: 92 },
+      { n: "Postman", l: 80 },
+      { n: "Burp Suite", l: 84 },
       { n: "JMeter", l: 80 },
+      { n: "Claude Code", l: 80 },
     ],
   },
   {
     cat: "Tools",
     items: [
-      { n: "Git", l: 95 },
-      { n: "Jenkins", l: 82 },
-      { n: "Jira", l: 88 },
-      { n: "Postman", l: 90 },
-      { n: "Burp Suite", l: 78 },
+      { n: "Git & GitHub", l: 95 },
+      { n: "Vercel", l: 80 },
+      { n: "Netlify", l: 88 },
     ],
   },
 ];

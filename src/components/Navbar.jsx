@@ -94,7 +94,7 @@ const Navbar = ({ theme, toggle }) => {
 
             {/* Resume Button - Desktop */}
             <a
-              href="https://drive.google.com/file/d/1nesbPwi-clJqh6GpaOzeA62VdpHnKJna/view"
+              href="https://drive.google.com/file/d/1vhJFzQKPRNcd2VxjsYNvH1ccCHW-UOWu/view?usp=drive_link"
               target="_blank"
               rel="noreferrer"
               className="hidden lg:flex bg-[linear-gradient(135deg,var(--accent),var(--accent2))] rounded-lg px-4 h-9 items-center justify-center gap-2 no-underline text-[13px] font-semibold text-white hover:shadow-[0_4px_16px_var(--glow)] transition-all duration-300"
@@ -143,7 +143,7 @@ const Navbar = ({ theme, toggle }) => {
             
             {/* Mobile Resume Button */}
             <a
-              href="https://drive.google.com/file/d/1nesbPwi-clJqh6GpaOzeA62VdpHnKJna/view"
+              href="https://drive.google.com/file/d/1vhJFzQKPRNcd2VxjsYNvH1ccCHW-UOWu/view?usp=drive_link"
               target="_blank"
               rel="noreferrer"
               className="bg-[linear-gradient(135deg,var(--accent),var(--accent2))] rounded-lg px-4 py-2 flex items-center justify-center gap-2 no-underline text-sm font-semibold text-white w-[90%] mt-2"
