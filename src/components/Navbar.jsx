@@ -94,7 +94,7 @@ const Navbar = ({ theme, toggle }) => {
 
             {/* Resume Button - Desktop */}
             <a
-              href="https://drive.google.com/file/d/1vhJFzQKPRNcd2VxjsYNvH1ccCHW-UOWu/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1Qrn0tksmr7TSJHJwmq4aFD1jLNYTB6yk/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
               className="hidden lg:flex bg-[linear-gradient(135deg,var(--accent),var(--accent2))] rounded-lg px-4 h-9 items-center justify-center gap-2 no-underline text-[13px] font-semibold text-white hover:shadow-[0_4px_16px_var(--glow)] transition-all duration-300"
