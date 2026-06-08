@@ -2,9 +2,22 @@ import { PROJECTS } from "../data/projects";
 import useInView from "../hooks/useInView";
 import { SectionHeader } from "../components/SectionHeader";
 import { ExternalLink, GitBranch } from "lucide-react";
+import { useState } from "react";
 
 const Projects = () => {
   const [ref, vis] = useInView();
+  const [activeFilter, setActiveFilter] = useState("Full Stack");
+
+  const filters = ["Full Stack", "Testing & QA"];
+
+  const filterColors = {
+    "Full Stack": "#a78bfa",
+    "Testing & QA": "#10b981",
+  };
+
+  const filteredProjects = PROJECTS.filter(
+    (project) => project.category === activeFilter
+  );
 
   return (
     <>
@@ -16,8 +29,45 @@ const Projects = () => {
             vis={vis}
           />
 
+          {/* ── Filter Buttons ── */}
+          <div
+            className="flex flex-wrap gap-3 mb-10"
+            style={{
+              opacity: vis ? 1 : 0,
+              transform: vis ? "none" : "translateY(12px)",
+              transition: "all 0.5s 0.15s ease",
+            }}
+          >
+            {filters.map((f) => {
+              const isActive = activeFilter === f;
+              const col = filterColors[f];
+              return (
+                <button
+                  key={f}
+                  onClick={() => setActiveFilter(f)}
+                  className="relative px-5 py-2 rounded-full text-[13px] font-semibold tracking-wide transition-all duration-300 cursor-pointer overflow-hidden"
+                  style={{
+                    background: isActive ? col + "22" : "rgba(255,255,255,0.03)",
+                    border: `1px solid ${isActive ? col + "88" : "rgba(255,255,255,0.08)"}`,
+                    color: isActive ? col : "var(--text2)",
+                    boxShadow: isActive ? `0 0 20px ${col}33` : "none",
+                    transform: isActive ? "translateY(-1px)" : "none",
+                  }}
+                >
+                  {isActive && (
+                    <span
+                      className="absolute inset-0 opacity-10"
+                      style={{ background: col }}
+                    />
+                  )}
+                  {f}
+                </button>
+              );
+            })}
+          </div>
+
           <div className="grid gap-6 grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
-            {PROJECTS.map((p, i) => (
+            {filteredProjects.map((p, i) => (
               <div
                 key={p.title}
                 className="bg-(--card) border border-(--border) rounded-2xl overflow-hidden flex flex-col cursor-pointer relative"
