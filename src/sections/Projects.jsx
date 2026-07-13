@@ -93,30 +93,34 @@ const Projects = () => {
                   }}
                 ></div>
                 <div className="p-6 flex-1">
-                  <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-start justify-between gap-3 mb-3">
                     <h3 
-                      className="font-['Syne'] font-bold text-lg"
+                      className="font-['Syne'] font-bold text-lg flex-1 min-w-0 break-words"
                       style={{ color: p.color }}
                     >
                       {p.title}
                     </h3>
 
-                    <div className="flex gap-2">
-                      <a
-                        href={p.gh}
-                        target="_blank"
-                        className="bg-(--bg3) border border-(--border) rounded-md w-7.5 h-7.5 flex items-center justify-center text-[14px] text-(--text2) no-underline"
-                      >
-                        <GitBranch size={16} />
-                      </a>
+                    <div className="flex gap-2 shrink-0">
+                      {p.gh && (
+                        <a
+                          href={p.gh}
+                          target="_blank"
+                          className="bg-(--bg3) border border-(--border) rounded-md w-7.5 h-7.5 flex items-center justify-center text-[14px] text-(--text2) no-underline"
+                        >
+                          <GitBranch size={16} />
+                        </a>
+                      )}
 
-                      <a
-                        href={p.live}
-                        target="_blank"
-                        className="bg-(--bg3) border border-(--border) rounded-md w-7.5 h-7.5 flex items-center justify-center text-[14px] text-(--text2) no-underline"
-                      >
-                        <ExternalLink size={16} />
-                      </a>
+                      {p.live && (
+                        <a
+                          href={p.live}
+                          target="_blank"
+                          className="bg-(--bg3) border border-(--border) rounded-md w-7.5 h-7.5 flex items-center justify-center text-[14px] text-(--text2) no-underline"
+                        >
+                          <ExternalLink size={16} />
+                        </a>
+                      )}
                     </div>
                   </div>
                   <p className="text-(--text2) text-[14px] leading-[1.7] mb-4">
